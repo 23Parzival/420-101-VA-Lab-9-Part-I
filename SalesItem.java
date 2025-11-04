@@ -133,11 +133,19 @@ public class SalesItem
     public Comment findMostHelpfulComment()
     {
         Iterator<Comment> it = comments.iterator();
-        Comment best = it.next();
+        Comment best = null;
+        /*if(!it.hasNext()) {
+            return null;
+        }
         while(it.hasNext()) {
             Comment current = it.next();
             if(current.getVoteCount() > best.getVoteCount()) {
                 best = current;
+            }
+        }*/
+        for(Comment comment : comments) {
+            if(comment.getVoteCount() > best.getVoteCount()) {
+                best = comment;
             }
         }
         return best;
@@ -149,7 +157,7 @@ public class SalesItem
      */
     private boolean ratingInvalid(int rating)
     {
-        return rating < 0 || rating > 5;
+        return rating <= 0 || rating > 5;
     }
     
     /**

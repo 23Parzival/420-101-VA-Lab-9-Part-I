@@ -1,14 +1,23 @@
-Project: online-shop
-Authors: Michael Kölling and David J. Barnes
 
-This project is part of the material for the book
+Answers to Lab 9, Part I:
 
-   Objects First with Java - A Practical Introduction using BlueJ
-   Seventh edition
-   David J. Barnes and Michael Kölling
+#1 Comments list works correctly, size increases. The array list has a size of 10.
 
-This project implements a small part of an online sales system (such as Amazon.com).
-The current project is concerned only with customer comments for sales items. It contains
-code to create, store, show and manipulate customer comments.
+#2 It correctly prints in both cases.
 
-NOTE: There are several serious errors to be found in these classes.
+#3 Works correctly.
+
+#4 Comment is rejected and not added to the list.
+
+#5 Everything works correctly. 0 is accepted though.
+
+#6 0 is accepted and 6 is rejected.
+
+#7 Downvoting a comment with 0 votes makes it negative. Second problem is that when an index from out of bounds of the array is specified
+   it will still act as if the comment was downvoted.
+
+#8 Works correctly. 
+
+#9 Error: java.util.NoSuchElementException
+
+#10
