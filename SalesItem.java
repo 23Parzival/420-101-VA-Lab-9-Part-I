@@ -133,22 +133,20 @@ public class SalesItem
     public Comment findMostHelpfulComment()
     {
         Iterator<Comment> it = comments.iterator();
-        Comment best = null;
-        /*if(!it.hasNext()) {
+        if(!it.hasNext()) 
+        {
             return null;
         }
-        while(it.hasNext()) {
-            Comment current = it.next();
-            if(current.getVoteCount() > best.getVoteCount()) {
-                best = current;
+        else {
+            Comment best = comments.get(0);
+            while(it.hasNext()) {
+                Comment current = it.next();
+                if(current.getVoteCount() > best.getVoteCount()) {
+                    best = current;
+                }
             }
-        }*/
-        for(Comment comment : comments) {
-            if(comment.getVoteCount() > best.getVoteCount()) {
-                best = comment;
-            }
+            return best;
         }
-        return best;
     }
     
     /**
