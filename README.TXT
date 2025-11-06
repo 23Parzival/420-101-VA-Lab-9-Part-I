@@ -20,4 +20,9 @@ Answers to Lab 9, Part I:
 
 #9 Error: java.util.NoSuchElementException
 
-#10
+#10 No, testing has to be redone.
+
+#11 Positive: 1, 2, 3, 5, 7, 8
+    Negative: 4, 6, 9
+    Further positive: Checking that the getName() method works.
+    Further negative: Checking to see that upvoting or downvoting a comment that doesn't exist is handled properly.
